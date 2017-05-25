@@ -1,0 +1,51 @@
+<form class="example-form">
+
+  <md-datepicker [(date)]="race-date"></md-datepicker>
+  <!--<md-input-container class="example-full-width">-->
+    <!--<input mdInput placeholder="Race date " type="date">-->
+
+  <!--</md-input-container>-->
+  <md-input-container class="example-full-width">
+
+    <input mdInput placeholder="Race distance " type="text">
+  </md-input-container>
+  <md-input-container class="example-full-width">
+
+    <input mdInput placeholder="Time target" type="time">
+  </md-input-container>
+
+
+
+  <p>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Age" type="text">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Weight" type="text">
+    </md-input-container>
+    <md-select placeholder="Shape level">
+      <md-option>
+        Athlete
+      </md-option>
+      <md-option>
+        Good shape
+      </md-option>
+      <md-option>
+        Advanced runner
+      </md-option>
+    </md-select>
+  </p>
+
+  <p>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Latest Race distance" type="text">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Latest Race result" type="text">
+    </md-input-container>
+
+  </p>
+  <button md-fab><md-icon>check</md-icon></button>
+  <button md-fab><md-icon>clear</md-icon></button>
+
+</form>
