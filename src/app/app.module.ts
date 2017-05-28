@@ -2,7 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MdInputModule, MdOptionModule, MdSelectModule} from '@angular/material';
+import {
+  MdDatepickerModule, MdIconModule, MdInputModule, MdNativeDateModule, MdOptionModule,
+  MdSelectModule, MdSliderModule
+} from '@angular/material';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -27,7 +30,13 @@ import { RightSidebarComponent } from './layout/right-sidebar/right-sidebar.comp
     HttpModule,
     MdInputModule,
     MdOptionModule,
-    MdSelectModule
+    MdSelectModule,
+    MdDatepickerModule,
+    MdNativeDateModule,
+    MdIconModule,
+    MdDatepickerModule,
+    MdNativeDateModule,
+    MdSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

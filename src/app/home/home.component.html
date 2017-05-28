@@ -1,51 +1,57 @@
-<form class="example-form">
+<div fxLayout="row" fxLayoutAlign="center center">
+  {{diagnostic}}
+  <form #detailsForm="ngForm" (ngSubmit)="onSubmit()">
+    <div *ngIf="showRace" fxLayout="column" fxLayoutAlign="space-around stretch">
+      <h2 class="header">Race details</h2>
 
-  <md-datepicker [(date)]="race-date"></md-datepicker>
-  <!--<md-input-container class="example-full-width">-->
-    <!--<input mdInput placeholder="Race date " type="date">-->
+      <md-input-container floatPlaceholder="never" class="form-group">
+        <input mdInput  [mdDatepicker]="raceDate"  placeholder="date" class="form-control" id="raceDate"
+               [(ngModel)]="model.raceDetails.raceDate" name="raceDate" required>
+        <button mdSuffix [mdDatepickerToggle]="raceDate"></button>
+      </md-input-container>
+      <md-datepicker #raceDate></md-datepicker>
 
-  <!--</md-input-container>-->
-  <md-input-container class="example-full-width">
+      <div class="form-group">
+        <md-select  class="form-control" name="raceDistance" id="raceDistance"
+                    [(ngModel)]="model.raceDetails.raceDistance" placeholder="distance" floatPlaceholder="never" required>
+          <md-option *ngFor="let distance of distances" [value]="distance">{{distance}}</md-option>
+        </md-select>
+      </div>
+    </div>
 
-    <input mdInput placeholder="Race distance " type="text">
-  </md-input-container>
-  <md-input-container class="example-full-width">
+    <div>
+      <md-slider thumbLabel  min="125" max="300" id="targetTime" name="targetTime"
+          [(ngModel)]="model.raceDetails.targetTime">
 
-    <input mdInput placeholder="Time target" type="time">
-  </md-input-container>
+      </md-slider>
+    </div>
+
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <button (click)="toggle()" md-fab>
+          <md-icon>arrow_forward</md-icon>
+        </button>
+      </div>
 
 
 
-  <p>
-    <md-input-container class="example-full-width">
-      <input mdInput placeholder="Age" type="text">
-    </md-input-container>
-    <md-input-container class="example-full-width">
-      <input mdInput placeholder="Weight" type="text">
-    </md-input-container>
-    <md-select placeholder="Shape level">
-      <md-option>
-        Athlete
-      </md-option>
-      <md-option>
-        Good shape
-      </md-option>
-      <md-option>
-        Advanced runner
-      </md-option>
-    </md-select>
-  </p>
 
-  <p>
-    <md-input-container class="example-full-width">
-      <input mdInput placeholder="Latest Race distance" type="text">
-    </md-input-container>
-    <md-input-container class="example-full-width">
-      <input mdInput placeholder="Latest Race result" type="text">
-    </md-input-container>
 
-  </p>
-  <button md-fab><md-icon>check</md-icon></button>
-  <button md-fab><md-icon>clear</md-icon></button>
+    <div *ngIf="!showRace" fxLayout="column" fxLayoutAlign="space-around stretch">
+      <h2 class="header">User details</h2>
 
-</form>
+
+      <div fxLayout="row" fxLayoutAlign="space-around stretch">
+        <button md-fab (click)="toggle()" >
+          <md-icon>arrow_back</md-icon>
+        </button>
+
+        <button type="submit">
+          <md-icon>check</md-icon>
+        </button>
+
+
+      </div>
+    </div>
+
+  </form>
+</div>
