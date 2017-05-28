@@ -9,16 +9,32 @@ import {RaceDetails} from '../api/model/race-details';
 })
 export class HomeComponent implements OnInit {
 
-  protected showRace = true;
+  protected showRace = false;
 
   protected distances = [
-    'Marathon(42.2)',
-    'Half-Marathon(21.1',
-    '10 KM'
+    {value: 1, viewValue: 'Marathon(42.2)'},
+    {value: 2, viewValue: 'Half-Marathon(21.1'},
+    {value: 3, viewValue: '10 KM'}
   ];
+  protected ages = [
+    {value: 1, viewValue: '< 20'},
+    {value: 2, viewValue: '20-29'},
+    {value: 3, viewValue: '30-39'},
+    {value: 4, viewValue: '40-45'},
+    {value: 5, viewValue: '46-50'},
+    {value: 6, viewValue: '> 50'}
+  ];
+  protected shapeLevels = [
+    {value: 1, viewValue: 'Bad'},
+    {value: 2, viewValue: 'Beginner'},
+    {value: 3, viewValue: 'Advanced'},
+    {value: 4, viewValue: 'Lifetime athlete'},
+    {value: 5, viewValue: 'Experienced'},
+  ];
+  protected weeklyWorkoutDays = [3, 4, 5, 6, 7];
   model = new FormDetails(
-    new RaceDetails(new Date(), 'Marathon', '3:06'),
-    47, 76, 'Advanced', 5);
+    new RaceDetails(new Date(), 1, '3:30'),
+    47, 76, 3, 5);
   constructor() { }
 
   ngOnInit() {
@@ -29,9 +45,8 @@ export class HomeComponent implements OnInit {
     console.log(this.showRace);
   }
   public onSubmit() {
+    alert('form submitted');
+    console.log(JSON.stringify(this.model));
   };
-  public translateSlider(): number {
-    return 7;
-  }
-  get diagnostic() { return JSON.stringify(this.model.raceDetails); }
+  get diagnostic() { return JSON.stringify(this.model); }
 }

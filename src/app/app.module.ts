@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {
   MdDatepickerModule, MdIconModule, MdInputModule, MdNativeDateModule, MdOptionModule,
-  MdSelectModule, MdSliderModule
+  MdSelectModule
 } from '@angular/material';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -13,6 +13,8 @@ import { LeftSidebarComponent } from './layout/left-sidebar/left-sidebar.compone
 import { HomeComponent } from './home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RightSidebarComponent } from './layout/right-sidebar/right-sidebar.component';
+import {NgbModule, NgbTimepicker, NgbTimepickerModule} from '@ng-bootstrap/ng-bootstrap';
+import {Animation} from '@angular/animations/browser/src/dsl/animation';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,7 @@ import { RightSidebarComponent } from './layout/right-sidebar/right-sidebar.comp
     MdIconModule,
     MdDatepickerModule,
     MdNativeDateModule,
-    MdSliderModule
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
