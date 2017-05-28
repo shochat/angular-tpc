@@ -1,7 +1,7 @@
 export class RaceDetails {
   constructor(
     public raceDate: Date,
-    public raceDistance: string,
+    public raceDistance: number,
     public targetTime: string,
   ) {}
 }
