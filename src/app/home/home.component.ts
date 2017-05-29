@@ -8,6 +8,7 @@ import {WeeklyPlan} from '../api/model/WeeklyPlan';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  providers: [CreatePlanService]
 })
 export class HomeComponent implements OnInit {
   protected errorMessage: string;
@@ -35,9 +36,7 @@ export class HomeComponent implements OnInit {
     {value: 5, viewValue: 'Experienced'},
   ];
   protected weeklyWorkoutDays = [3, 4, 5, 6, 7];
-  model = new FormDetails(
-    new RaceDetails(new Date(), 1, '3:30'),
-    47, 76, 3, 5);
+  formDetails = new FormDetails(new RaceDetails(new Date(), 1, '3:30'), 47, 76, 3, 5);
   constructor(private createPlanService: CreatePlanService) { }
 
   ngOnInit() {
@@ -45,7 +44,7 @@ export class HomeComponent implements OnInit {
   }
 
   initCreatePlanService() {
-    this.createPlanService.createPlan(this.model)
+    this.createPlanService.createPlan(this.formDetails)
       .subscribe(
         plan => this.plan = plan, // Check this assignment
         error => this.errorMessage = <any>error);
@@ -56,7 +55,7 @@ export class HomeComponent implements OnInit {
     console.log(this.showRace);
   }
   public onSubmit() {
-    const plan = this.createPlanService.createPlan(this.model);
+    const plan = this.createPlanService.createPlan(this.formDetails);
   };
-  get diagnostic() { return JSON.stringify(this.model); }
+  get diagnostic() { return JSON.stringify(this.formDetails); }
 }

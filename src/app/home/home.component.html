@@ -5,21 +5,21 @@
       <h2 class="header">Race details</h2>
 
       <md-input-container floatPlaceholder="never" class="form-group">
-        <input mdInput  [mdDatepicker]="raceDate"  placeholder="date" class="form-control" id="raceDate"
-               [(ngModel)]="model.raceDetails.raceDate" name="raceDate" required>
+        <input mdInput [mdDatepicker]="raceDate" placeholder="date" class="form-control" id="raceDate"
+               [(ngModel)]="formDetails.raceDetails.raceDate" name="raceDate" required>
         <button mdSuffix [mdDatepickerToggle]="raceDate"></button>
       </md-input-container>
       <md-datepicker #raceDate></md-datepicker>
 
       <div class="form-group">
-        <md-select  class="form-control" name="raceDistance" id="raceDistance"
-                    [(ngModel)]="model.raceDetails.raceDistance" placeholder="distance" floatPlaceholder="never" required>
+        <md-select class="form-control" name="raceDistance" id="raceDistance"
+                   [(ngModel)]="formDetails.raceDetails.raceDistance" placeholder="distance" floatPlaceholder="never" required>
           <md-option *ngFor="let distance of distances" [value]="distance.value">{{ distance.viewValue }}</md-option>
         </md-select>
       </div>
 
     <div>
-      <ngb-timepicker name="targetTime" [(ngModel)]="model.raceDetails.targetTime"></ngb-timepicker>
+      <ngb-timepicker name="targetTime" [(ngModel)]="formDetails.raceDetails.targetTime"></ngb-timepicker>
     </div>
 
       <div fxLayout="row" fxLayoutAlign="center center">
@@ -34,27 +34,27 @@
 
       <div class="row">
         <div class="column">
-          <md-select class="form-control" name="age" id="age" [(ngModel)]="model.age" placeholder="age" floatPlaceholder="never" required>
+          <md-select class="form-control" name="age" id="age" [(ngModel)]="formDetails.age" placeholder="age" floatPlaceholder="never" required>
             <md-option *ngFor="let age of ages" [value]="age.value">{{ age.viewValue }}</md-option>
           </md-select>
         </div>
         <div class="column">
           <md-input-container class="form-group" floatplaceholder="never">
             <input mdInput class="form-control" name="weight" id="weight"
-                   [(ngModel)]="model.weight" placeholder="weight" required>
+                   [(ngModel)]="formDetails.weight" placeholder="weight" required>
           </md-input-container>
         </div>
         <div class="column">
           <div class="form-group">
             <md-select class="form-control" name="shapeLevel" id="shapeLevel"
-                       [(ngModel)]="model.shapeLevel"  placeholder="Shape level" floatplaceholder="never">
+                       [(ngModel)]="formDetails.shapeLevel" placeholder="Shape level" floatplaceholder="never">
               <md-option *ngFor="let shapeLevel of shapeLevels">{{shapeLevel.viewValue}}</md-option>
             </md-select>
           </div>
         </div>
         <div class="form-group">
           <md-select class="form-control" name="weeklyWorkoutDays" id="weeklyWorkoutDays"
-                     [(ngModel)]="model.weeklyWorkoutDays" placeholder="Weekly workout days" floatplaceholder="never">
+                     [(ngModel)]="formDetails.weeklyWorkoutDays" placeholder="Weekly workout days" floatplaceholder="never">
             <md-option *ngFor="let days of weeklyWorkoutDays">{{days}}</md-option>
           </md-select>
         </div>
