@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormDetails} from '../api/model/form-details';
 import {RaceDetails} from '../api/model/race-details';
+import {CreatePlanService} from '../services/CreatePlanService';
+import {WeeklyPlan} from '../api/model/WeeklyPlan';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +10,8 @@ import {RaceDetails} from '../api/model/race-details';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-
+  protected errorMessage: string;
+  protected plan: WeeklyPlan[];
   protected showRace = false;
 
   protected distances = [
@@ -35,9 +38,17 @@ export class HomeComponent implements OnInit {
   model = new FormDetails(
     new RaceDetails(new Date(), 1, '3:30'),
     47, 76, 3, 5);
-  constructor() { }
+  constructor(private createPlanService: CreatePlanService) { }
 
   ngOnInit() {
+    this.initCreatePlanService();
+  }
+
+  initCreatePlanService() {
+    this.createPlanService.createPlan(this.model)
+      .subscribe(
+        plan => this.plan = plan, // Check this assignment
+        error => this.errorMessage = <any>error);
   }
 
   public toggle(): void {
@@ -45,8 +56,7 @@ export class HomeComponent implements OnInit {
     console.log(this.showRace);
   }
   public onSubmit() {
-    alert('form submitted');
-    console.log(JSON.stringify(this.model));
+    const plan = this.createPlanService.createPlan(this.model);
   };
   get diagnostic() { return JSON.stringify(this.model); }
 }
