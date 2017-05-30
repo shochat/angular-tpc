@@ -6,11 +6,11 @@ import {WeeklyPlan} from '../api/model/WeeklyPlan';
 
 @Injectable()
 export class CreatePlanService {
-  private serviceUrl = 'http://localhost:5000';
+  private serviceUrl = 'http://localhost:5000/create-plan';
   constructor(private http: Http) {}
 
   createPlan(form: FormDetails): Observable<WeeklyPlan[]> {
-    return this.http.post(this.serviceUrl, 'something')
+    return this.http.post(this.serviceUrl, form)
       .map(this.extractData)
       .catch(this.handleError);
   }
