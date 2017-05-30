@@ -7,7 +7,7 @@
       <md-input-container floatPlaceholder="never" class="form-group">
         <input mdInput [mdDatepicker]="raceDate" placeholder="date" class="form-control" id="raceDate"
                [(ngModel)]="formDetails.raceDetails.raceDate" name="raceDate" required>
-        <button mdSuffix [mdDatepickerToggle]="raceDate"></button>
+        <button md-button mdSuffix [mdDatepickerToggle]="raceDate"></button>
       </md-input-container>
       <md-datepicker #raceDate></md-datepicker>
 
@@ -23,7 +23,7 @@
     </div>
 
       <div fxLayout="row" fxLayoutAlign="center center">
-        <button (click)="toggle()" md-fab>
+        <button md-button (click)="toggle()" md-fab>
           <md-icon>arrow_forward</md-icon>
         </button>
       </div>
