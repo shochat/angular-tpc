@@ -15,6 +15,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RightSidebarComponent } from './layout/right-sidebar/right-sidebar.component';
 import {NgbModule, NgbTimepicker, NgbTimepickerModule} from '@ng-bootstrap/ng-bootstrap';
 import {Animation} from '@angular/animations/browser/src/dsl/animation';
+import {CreatePlanService} from './services/CreatePlanService';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import {Animation} from '@angular/animations/browser/src/dsl/animation';
     MdNativeDateModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [CreatePlanService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
