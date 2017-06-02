@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {
-  MdDatepickerModule, MdIconModule, MdInputModule, MdNativeDateModule, MdOptionModule,
+  MdDatepickerModule,
+  MdIconModule, MdInputModule, MdNativeDateModule, MdOptionModule,
   MdSelectModule
 } from '@angular/material';
 import { AppComponent } from './app.component';
@@ -13,9 +14,11 @@ import { LeftSidebarComponent } from './layout/left-sidebar/left-sidebar.compone
 import { HomeComponent } from './home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RightSidebarComponent } from './layout/right-sidebar/right-sidebar.component';
-import {NgbModule, NgbTimepicker, NgbTimepickerModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {Animation} from '@angular/animations/browser/src/dsl/animation';
 import {CreatePlanService} from './services/CreatePlanService';
+import {DatePipe} from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -34,14 +37,13 @@ import {CreatePlanService} from './services/CreatePlanService';
     MdInputModule,
     MdOptionModule,
     MdSelectModule,
-    MdDatepickerModule,
     MdNativeDateModule,
     MdIconModule,
     MdDatepickerModule,
     MdNativeDateModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
   ],
-  providers: [CreatePlanService],
+  providers: [CreatePlanService, DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
