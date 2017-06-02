@@ -3,13 +3,14 @@ import {Http, Response} from '@angular/http';
 import {FormDetails} from '../api/model/form-details';
 import {Observable} from 'rxjs/Observable';
 import {WeeklyPlan} from '../api/model/WeeklyPlan';
+import {Plan} from '../api/model/Plan';
 
 @Injectable()
 export class CreatePlanService {
   private serviceUrl = 'http://localhost:5000/create-plan';
   constructor(private http: Http) {}
 
-  createPlan(form: FormDetails): Observable<WeeklyPlan[]> {
+  createPlan(form: FormDetails): Observable<Plan> {
     return this.http.post(this.serviceUrl, form)
       .map(this.extractData)
       .catch(this.handleError);
