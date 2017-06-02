@@ -1,0 +1,30 @@
+{
+  "formDetails": {
+    "raceDetails": {
+      "raceDate":"31-12-2017",
+      "raceDistance": "MARATHON",
+      "targetTime": "3:17:23"
+    },
+    "age": 3,
+    "weight": 76,
+    "shapeLevel": 2,
+    "weeklyWorkoutDays": 6,
+    "raceHistory": [
+      {
+        "raceDate": "31-12-2015",
+        "raceDistance": "HALF_MARATHON",
+        "targetTime": "1:28:05"
+      },
+      {
+        "raceDate": "31-06-2016",
+        "raceDistance": "MARATHON",
+        "targetTime": "3:46:00"
+      },
+      {
+        "raceDate": "13-01-2017",
+        "raceDistance": "HALF_MARATHON",
+        "targetTime": "1:32:56"
+      }
+    ]
+  }
+}
