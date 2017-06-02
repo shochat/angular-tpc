@@ -1,7 +1,7 @@
 export class Workout {
-  private description: String;
-  private duration: number;
-  private length: number;
-  private type: number;
-  private day: number;
+  public description: String;
+  public duration: number;
+  public length: number;
+  public type: string;
+  public day: number;
 }

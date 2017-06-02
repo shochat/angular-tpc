@@ -1,7 +1,9 @@
 import {Workout} from './Workout';
 export class WeeklyPlan {
-  private weeklyTotal: number;
-  private isRecovery: boolean;
-  private isBLevelRace: boolean;
-  private workouts: Workout[];
+  public weeklyTotal: number;
+  public weeksFromRace: number;
+  public isRecovery: boolean;
+  public isBLevelRace: boolean;
+  public intensity: string;
+  public workouts: Workout[];
 }
