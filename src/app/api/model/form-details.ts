@@ -6,5 +6,17 @@ export class FormDetails {
     public shapeLevel: number;
     public weeklyWorkoutDays: number;
     public racingHistory?: RaceDetails[];
-  constructor() {}
+    constructor(
+      raceDetails: RaceDetails,
+      age: number,
+      weight: number,
+      shapeLevel: number,
+      weeklyWorkoutDays: number
+    ) {
+      this.raceDetails = raceDetails;
+      this.age = age;
+      this.weight = weight;
+      this.shapeLevel = shapeLevel;
+      this.weeklyWorkoutDays = weeklyWorkoutDays;
+    }
 }
