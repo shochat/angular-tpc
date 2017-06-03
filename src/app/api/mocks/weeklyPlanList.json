@@ -1,0 +1,796 @@
+{
+  "weeklyPlanList": [
+    {
+      "weeklyTotal": 32.5,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 0,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 8,
+          "duration": 1
+        },
+        {
+          "description": "1-2-1-2-1 KM Pyramid\nWorm up for 2 KM\nRun for [1.0, 2.0, 1.0, 2.0, 1.0] KM in pace [4.0, 5.0, 4.0, 5.0, 4.0]\nRecovery run for [0.5, 1.0, 0.5, 1.0, 0.5] Km in pace [6.0, 6.0, 6.0, 6.0, 6.0] between intervals\nCool down for 2 KM",
+          "type": "PYRAMID",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 14.5,
+          "duration": 75.4
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 43.8,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 1,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 24,
+          "duration": 1
+        },
+        {
+          "description": "6 * 800 Intervals\nWorm up for 2 KM\nRepeat for 6 times:\n\tRun 800 Km in pace 4.5\n\tRecovery run for 1 Minutes in pace 6\nCool down for 2 KM",
+          "type": "INTERVALS",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 9.8,
+          "duration": 51.45
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 47.0,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 2,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 28,
+          "duration": 1
+        },
+        {
+          "description": "5 * 500m-250m-250m Fartlek\nWorm up for 2 KM\nRepeat for 5 times:\n\tRun [500.0, 250.0, 250.0] KM in pace [4.5, 4.25, 4.75] (NO RECOVERY BETWEEN SETS)\nCool down for 2 KM",
+          "type": "FARTLEK",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 9.0,
+          "duration": 40.5
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 62.8,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 3,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 36,
+          "duration": 1
+        },
+        {
+          "description": "8 * 800m Uphill Uphill\nWorm up for 2 KM\nRepeat for 8 times:\n\tRun 800 m uphill in pace 4\n\tRest jogging downhill\nCool down for 2",
+          "type": "UPHILL",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 16.8,
+          "duration": 100.80000000000001
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 57.733333333333334,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 4,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 36,
+          "duration": 1
+        },
+        {
+          "description": "8 * 800 Intervals\nWorm up for 2 KM\nRepeat for 8 times:\n\tRun 800 Km in pace 4.5\n\tRecovery run for 1 Minutes in pace 6\nCool down for 2 KM",
+          "type": "INTERVALS",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 11.733333333333334,
+          "duration": 61.60000000000001
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 79.8,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 5,
+      "workouts": [
+        {
+          "description": "Last B level race",
+          "type": "RACE_OR_TEST",
+          "intensity": "VERY_INTENSE",
+          "weekday": "SATURDAY",
+          "length": 21,
+          "duration": 2
+        },
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 32,
+          "duration": 1
+        },
+        {
+          "description": "8 * 800m Uphill Uphill\nWorm up for 2 KM\nRepeat for 8 times:\n\tRun 800 m uphill in pace 4\n\tRest jogging downhill\nCool down for 2",
+          "type": "UPHILL",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 16.8,
+          "duration": 100.80000000000001
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 49.733333333333334,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 6,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 28,
+          "duration": 1
+        },
+        {
+          "description": "8 * 800 Intervals\nWorm up for 2 KM\nRepeat for 8 times:\n\tRun 800 Km in pace 4.5\n\tRecovery run for 1 Minutes in pace 6\nCool down for 2 KM",
+          "type": "INTERVALS",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 11.733333333333334,
+          "duration": 61.60000000000001
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 56.8,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 7,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 30,
+          "duration": 1
+        },
+        {
+          "description": "8 * 800m Uphill Uphill\nWorm up for 2 KM\nRepeat for 8 times:\n\tRun 800 m uphill in pace 4\n\tRest jogging downhill\nCool down for 2",
+          "type": "UPHILL",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 16.8,
+          "duration": 100.80000000000001
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 49.0,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 8,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 30,
+          "duration": 1
+        },
+        {
+          "description": "5 * 500m-250m-250m Fartlek\nWorm up for 2 KM\nRepeat for 5 times:\n\tRun [500.0, 250.0, 250.0] KM in pace [4.5, 4.25, 4.75] (NO RECOVERY BETWEEN SETS)\nCool down for 2 KM",
+          "type": "FARTLEK",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 9.0,
+          "duration": 40.5
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 52.5,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 9,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 28,
+          "duration": 1
+        },
+        {
+          "description": "1-2-1-2-1 KM Pyramid\nWorm up for 2 KM\nRun for [1.0, 2.0, 1.0, 2.0, 1.0] KM in pace [4.0, 5.0, 4.0, 5.0, 4.0]\nRecovery run for [0.5, 1.0, 0.5, 1.0, 0.5] Km in pace [6.0, 6.0, 6.0, 6.0, 6.0] between intervals\nCool down for 2 KM",
+          "type": "PYRAMID",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 14.5,
+          "duration": 75.4
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 47.0,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 10,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 28,
+          "duration": 1
+        },
+        {
+          "description": "5 * 500m-250m-250m Fartlek\nWorm up for 2 KM\nRepeat for 5 times:\n\tRun [500.0, 250.0, 250.0] KM in pace [4.5, 4.25, 4.75] (NO RECOVERY BETWEEN SETS)\nCool down for 2 KM",
+          "type": "FARTLEK",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 9.0,
+          "duration": 40.5
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 73.8,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 11,
+      "workouts": [
+        {
+          "description": "Before tense B level race",
+          "type": "RACE_OR_TEST",
+          "intensity": "VERY_INTENSE",
+          "weekday": "SATURDAY",
+          "length": 21,
+          "duration": 2
+        },
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 26,
+          "duration": 1
+        },
+        {
+          "description": "8 * 800m Uphill Uphill\nWorm up for 2 KM\nRepeat for 8 times:\n\tRun 800 m uphill in pace 4\n\tRest jogging downhill\nCool down for 2",
+          "type": "UPHILL",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 16.8,
+          "duration": 100.80000000000001
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 50.5,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 12,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 26,
+          "duration": 1
+        },
+        {
+          "description": "1-2-1-2-1 KM Pyramid\nWorm up for 2 KM\nRun for [1.0, 2.0, 1.0, 2.0, 1.0] KM in pace [4.0, 5.0, 4.0, 5.0, 4.0]\nRecovery run for [0.5, 1.0, 0.5, 1.0, 0.5] Km in pace [6.0, 6.0, 6.0, 6.0, 6.0] between intervals\nCool down for 2 KM",
+          "type": "PYRAMID",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 14.5,
+          "duration": 75.4
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 50.8,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 13,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 24,
+          "duration": 1
+        },
+        {
+          "description": "8 * 800m Uphill Uphill\nWorm up for 2 KM\nRepeat for 8 times:\n\tRun 800 m uphill in pace 4\n\tRest jogging downhill\nCool down for 2",
+          "type": "UPHILL",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 16.8,
+          "duration": 100.80000000000001
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 42.0,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 14,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 22,
+          "duration": 1
+        },
+        {
+          "description": "6 * 500m-250m-250m Fartlek\nWorm up for 2 KM\nRepeat for 6 times:\n\tRun [500.0, 250.0, 250.0] KM in pace [4.5, 4.25, 4.75] (NO RECOVERY BETWEEN SETS)\nCool down for 2 KM",
+          "type": "FARTLEK",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 10.0,
+          "duration": 45.0
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 42.0,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 15,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 21,
+          "duration": 1
+        },
+        {
+          "description": "7 * 500m-250m-250m Fartlek\nWorm up for 2 KM\nRepeat for 7 times:\n\tRun [500.0, 250.0, 250.0] KM in pace [4.5, 4.25, 4.75] (NO RECOVERY BETWEEN SETS)\nCool down for 2 KM",
+          "type": "FARTLEK",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 11.0,
+          "duration": 49.5
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 45.666666666666664,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 16,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 22,
+          "duration": 1
+        },
+        {
+          "description": "10 * 800 Intervals\nWorm up for 2 KM\nRepeat for 10 times:\n\tRun 800 Km in pace 4.5\n\tRecovery run for 1 Minutes in pace 6\nCool down for 2 KM",
+          "type": "INTERVALS",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 13.666666666666666,
+          "duration": 71.75
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 71.0,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 17,
+      "workouts": [
+        {
+          "description": "Baseline B level race",
+          "type": "RACE_OR_TEST",
+          "intensity": "VERY_INTENSE",
+          "weekday": "SATURDAY",
+          "length": 21,
+          "duration": 2
+        },
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 22,
+          "duration": 1
+        },
+        {
+          "description": "1-2-3-2-1 KM Pyramid\nWorm up for 2 KM\nRun for [1.0, 2.0, 3.0, 2.0, 1.0] KM in pace [4.0, 5.0, 6.0, 5.0, 4.0]\nRecovery run for [0.5, 1.0, 2.0, 1.0, 0.5] Km in pace [6.0, 6.0, 6.0, 6.0, 6.0] between intervals\nCool down for 2 KM",
+          "type": "PYRAMID",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 18.0,
+          "duration": 97.2
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 50.0,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 18,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 22,
+          "duration": 1
+        },
+        {
+          "description": "1-2-3-2-1 KM Pyramid\nWorm up for 2 KM\nRun for [1.0, 2.0, 3.0, 2.0, 1.0] KM in pace [4.0, 5.0, 6.0, 5.0, 4.0]\nRecovery run for [0.5, 1.0, 2.0, 1.0, 0.5] Km in pace [6.0, 6.0, 6.0, 6.0, 6.0] between intervals\nCool down for 2 KM",
+          "type": "PYRAMID",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 18.0,
+          "duration": 97.2
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 43.0,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 19,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 22,
+          "duration": 1
+        },
+        {
+          "description": "7 * 500m-250m-250m Fartlek\nWorm up for 2 KM\nRepeat for 7 times:\n\tRun [500.0, 250.0, 250.0] KM in pace [4.5, 4.25, 4.75] (NO RECOVERY BETWEEN SETS)\nCool down for 2 KM",
+          "type": "FARTLEK",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 11.0,
+          "duration": 49.5
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 48.8,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 20,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 22,
+          "duration": 1
+        },
+        {
+          "description": "8 * 800m Uphill Uphill\nWorm up for 2 KM\nRepeat for 8 times:\n\tRun 800 m uphill in pace 4\n\tRest jogging downhill\nCool down for 2",
+          "type": "UPHILL",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 16.8,
+          "duration": 100.80000000000001
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 47.8,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 21,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 21,
+          "duration": 1
+        },
+        {
+          "description": "8 * 800m Uphill Uphill\nWorm up for 2 KM\nRepeat for 8 times:\n\tRun 800 m uphill in pace 4\n\tRest jogging downhill\nCool down for 2",
+          "type": "UPHILL",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 16.8,
+          "duration": 100.80000000000001
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 45.5,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 22,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 21,
+          "duration": 1
+        },
+        {
+          "description": "1-2-1-2-1 KM Pyramid\nWorm up for 2 KM\nRun for [1.0, 2.0, 1.0, 2.0, 1.0] KM in pace [4.0, 5.0, 4.0, 5.0, 4.0]\nRecovery run for [0.5, 1.0, 0.5, 1.0, 0.5] Km in pace [6.0, 6.0, 6.0, 6.0, 6.0] between intervals\nCool down for 2 KM",
+          "type": "PYRAMID",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 14.5,
+          "duration": 75.4
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "weeklyTotal": 40.0,
+      "isRecovery": false,
+      "isBLevelRace": false,
+      "weeksFromRace": 23,
+      "workouts": [
+        {
+          "description": "Run in steady pace",
+          "type": "VOLUME",
+          "intensity": "AEROBIC",
+          "weekday": "SATURDAY",
+          "length": 21,
+          "duration": 1
+        },
+        {
+          "description": "5 * 500m-250m-250m Fartlek\nWorm up for 2 KM\nRepeat for 5 times:\n\tRun [500.0, 250.0, 250.0] KM in pace [4.5, 4.25, 4.75] (NO RECOVERY BETWEEN SETS)\nCool down for 2 KM",
+          "type": "FARTLEK",
+          "intensity": "TENSED",
+          "weekday": "MONDAY",
+          "length": 9.0,
+          "duration": 40.5
+        },
+        {
+          "description": "Run in steady pace for recovery",
+          "type": "LITE_VOLUME",
+          "intensity": "LITE",
+          "weekday": "FRIDAY",
+          "length": 10,
+          "duration": 1
+        }
+      ]
+    }
+  ]
+}
