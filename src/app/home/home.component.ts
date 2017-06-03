@@ -3,8 +3,8 @@ import {FormDetails} from '../api/model/form-details';
 import {RaceDetails} from '../api/model/race-details';
 import {CreatePlanService} from '../services/CreatePlanService';
 import {DatePipe} from '@angular/common';
-import {Plan} from '../api/model/Plan';
 import {NgbTimeStruct} from '@ng-bootstrap/ng-bootstrap';
+import {WeeklyPlan} from '../api/model/WeeklyPlan';
 
 
 @Component({
@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   protected formDetails: FormDetails;
   protected time: NgbTimeStruct = {hour: 0, minute: 0, second: 0};
   protected errorMessage: string;
-  protected plan: Plan = new Plan();
+  protected plan: WeeklyPlan[] = [];
   protected showRace = true;
 
   protected distances = [
@@ -57,7 +57,7 @@ export class HomeComponent implements OnInit {
     this.formDetails.raceDetails.targetTime = this.convertNgbTimeObjectToString(this.time);
 
     this.createPlan(this.formDetails);
-    console.log(JSON.stringify(this.plan.weeklyPlanList));
+    console.log(JSON.stringify(JSON.stringify(this.plan)));
     console.log('finished');
   };
 
@@ -71,11 +71,8 @@ export class HomeComponent implements OnInit {
 
   createPlan(formDetails: FormDetails): void {
     this.createPlanService.createPlan(formDetails).subscribe(
-      (plan: Plan) => this.plan = plan,
+      (plan: WeeklyPlan[]) => this.plan = plan,
       error => this.errorMessage = error
     );
   }
-  get diagnostic() {
-    return JSON.stringify(this.formDetails);
-  } // TODO remove this
 }
