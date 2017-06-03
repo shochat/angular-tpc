@@ -11,7 +11,7 @@
           "description": "intervals run.....",
           "type": "INTERVAL",
           "intensity": "AEROBIC",
-          "day": 2,
+          "day": "SATURDAY",
           "duration": 1.3,
           "length": 13.7
         },
@@ -19,7 +19,7 @@
           "description": "FARTLEK run.....",
           "type": "FARTLEK",
           "intensity": "AEROBIC",
-          "day": 4,
+          "day": "THURSDAY",
           "duration": 1.7,
           "length": 17.3
         }
