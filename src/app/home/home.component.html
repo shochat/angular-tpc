@@ -1,76 +1,87 @@
 <div fxLayout="row" fxLayoutAlign="center center">
-  {{diagnostic}}
-  <form #detailsForm="ngForm" (ngSubmit)="onSubmit()">
-    <div *ngIf="showRace" fxLayout="column" fxLayoutAlign="space-around stretch">
-      <h2 class="header">Race details</h2>
+  <form #detailsForm="ngForm" (ngSubmit)="onSubmit()"  fxLayout="column" fxLayoutAlign="space-around stretch">
+    <div *ngIf="showRace">
+      <h2 class="form-header">Race details</h2>
 
-      <md-input-container floatPlaceholder="never" class="form-group">
-        <input mdInput [mdDatepicker]="raceDate" placeholder="date" class="form-control" name="raceDate"
+      <md-input-container floatPlaceholder="never" class="full-width">
+        <input mdInput [mdDatepicker]="raceDate" placeholder="date" name="raceDate"
                [(ngModel)]="formDetails.raceDetails.raceDate" required>
         <button md-button type="button" mdSuffix [mdDatepickerToggle]="raceDate"></button>
       </md-input-container>
-      <md-datepicker #raceDate></md-datepicker>
-
+      <md-datepicker #raceDate class="full-width"></md-datepicker>
 
       <div class="form-group">
-        <md-select class="form-control" name="raceDistance" id="raceDistance"
+        <md-select name="raceDistance" id="raceDistance" class="form-control"
                    [(ngModel)]="formDetails.raceDetails.raceDistance" placeholder="distance" floatPlaceholder="never" required>
           <md-option *ngFor="let distance of distances" [value]="distance.value">{{ distance.viewValue }}</md-option>
         </md-select>
       </div>
 
-    <div>
-      <ngb-timepicker name="targetTime" [(ngModel)]="time" seconds="true"></ngb-timepicker>
-    </div>
+      <div class="form-row">
+        <ngb-timepicker name="targetTime" [(ngModel)]="time" seconds="true"></ngb-timepicker>
+      </div>
 
-      <div fxLayout="row" fxLayoutAlign="center center">
+      <div>
         <button md-button (click)="toggle()" md-fab>
           <md-icon>arrow_forward</md-icon>
         </button>
       </div>
     </div>
 
-    <div *ngIf="!showRace" fxLayout="column" fxLayoutAlign="space-around stretch">
+    <div *ngIf="!showRace">
       <h2 class="header">User details</h2>
 
-      <div class="row">
-        <div class="column">
-          <md-select class="form-control" name="age" id="age" [(ngModel)]="formDetails.age" placeholder="age" floatPlaceholder="never" required>
-            <md-option *ngFor="let age of ages" [value]="age.value">{{ age.viewValue }}</md-option>
-          </md-select>
-        </div>
-        <div class="column">
-          <md-input-container class="form-group" floatplaceholder="never">
-            <input mdInput class="form-control" name="weight" id="weight"
-                   [(ngModel)]="formDetails.weight" placeholder="weight" required>
-          </md-input-container>
-        </div>
-        <div class="column">
+      <table class="full-width" cellspacing="3px">
+        <tr>
+          <td>
+            <div class="form-group">
+              <md-select class="form-control" name="age" id="age" [(ngModel)]="formDetails.age" placeholder="age" floatPlaceholder="never" required>
+                <md-option *ngFor="let age of ages" [value]="age.value">{{ age.viewValue }}</md-option>
+              </md-select>
+            </div>
+          </td>
+          <td>
+            <md-input-container class="form-group" floatplaceholder="never">
+              <input mdInput name="weight" id="weight" class="form-control"
+                     [(ngModel)]="formDetails.weight" placeholder="weight" required>
+            </md-input-container>
+          </td>
+          <td>
+            <div class="form-group">
+              <md-select name="shapeLevel" id="shapeLevel" class="form-control"
+                         [(ngModel)]="formDetails.shapeLevel" placeholder="Shape level" floatplaceholder="never">
+                <md-option *ngFor="let shapeLevel of shapeLevels" [value]="shapeLevel.value">{{shapeLevel.viewValue}}</md-option>
+              </md-select>
+            </div>
+          </td>
+
+        </tr>
+
+        <tr>
           <div class="form-group">
-            <md-select class="form-control" name="shapeLevel" id="shapeLevel"
-                       [(ngModel)]="formDetails.shapeLevel" placeholder="Shape level" floatplaceholder="never">
-              <md-option *ngFor="let shapeLevel of shapeLevels" [value]="shapeLevel.value">{{shapeLevel.viewValue}}</md-option>
+            <md-select class="form-control" name="weeklyWorkoutDays" id="weeklyWorkoutDays"
+                       [(ngModel)]="formDetails.weeklyWorkoutDays" placeholder="Weekly workout days" floatplaceholder="never">
+              <md-option *ngFor="let days of weeklyWorkoutDays" [value]="days">{{days}}</md-option>
             </md-select>
           </div>
-        </div>
-        <div class="form-group">
-          <md-select class="form-control" name="weeklyWorkoutDays" id="weeklyWorkoutDays"
-                     [(ngModel)]="formDetails.weeklyWorkoutDays" placeholder="Weekly workout days" floatplaceholder="never">
-            <md-option *ngFor="let days of weeklyWorkoutDays" [value]="days">{{days}}</md-option>
-          </md-select>
-        </div>
-      </div>
+        </tr>
 
-      <div fxLayout="row" fxLayoutAlign="space-around stretch">
-        <button md-fab (click)="toggle()" >
-          <md-icon>arrow_back</md-icon>
-        </button>
+        <tr>
+          <button md-fab (click)="toggle()" >
+            <md-icon>arrow_back</md-icon>
+          </button>
+          <button type="submit">
+            <md-icon>check</md-icon>
+          </button>
+        </tr>
+      </table>
 
-        <button type="submit">
-          <md-icon>check</md-icon>
-        </button>
-      </div>
     </div>
 
   </form>
+  <div>
+    <h1>PLAN</h1>
+
+  {{ this.plan | json }}
+  </div>
 </div>
