@@ -5,7 +5,7 @@
 
       <md-input-container floatPlaceholder="never" class="full-width">
         <input mdInput [mdDatepicker]="raceDate" placeholder="date" name="raceDate"
-               [(ngModel)]="formDetails.raceDetails.raceDate" required>
+               [(ngModel)]="this.formDetails.raceDetails.raceDate" required>
         <button md-button type="button" mdSuffix [mdDatepickerToggle]="raceDate"></button>
       </md-input-container>
       <md-datepicker #raceDate class="full-width"></md-datepicker>
@@ -75,13 +75,6 @@
           </button>
         </tr>
       </table>
-
     </div>
-
   </form>
-  <div>
-    <h1>PLAN</h1>
-
-  {{ this.plan | json }}
-  </div>
 </div>

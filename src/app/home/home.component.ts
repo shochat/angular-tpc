@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {FormDetails} from '../api/model/form-details';
 import {RaceDetails} from '../api/model/race-details';
-import {CreatePlanService} from '../services/CreatePlanService';
 import {DatePipe} from '@angular/common';
 import {NgbTimeStruct} from '@ng-bootstrap/ng-bootstrap';
-import {WeeklyPlan} from '../api/model/WeeklyPlan';
+import {Router} from '@angular/router';
+import {CreatePlanService} from '../services/CreatePlanService';
 
 
 @Component({
@@ -15,8 +15,6 @@ import {WeeklyPlan} from '../api/model/WeeklyPlan';
 export class HomeComponent implements OnInit {
   protected formDetails: FormDetails;
   protected time: NgbTimeStruct = {hour: 0, minute: 0, second: 0};
-  protected errorMessage: string;
-  protected plan: WeeklyPlan[] = [];
   protected showRace = true;
 
   protected distances = [
@@ -42,7 +40,8 @@ export class HomeComponent implements OnInit {
   protected weeklyWorkoutDays = [3, 4, 5, 6, 7];
 
   constructor(private createPlanService: CreatePlanService,
-              private datepipe: DatePipe) {
+              private datepipe: DatePipe,
+              private router: Router) {
     this.formDetails = new FormDetails(new RaceDetails(), 0, 0, 0, 0);
   }
 
@@ -53,26 +52,22 @@ export class HomeComponent implements OnInit {
     this.showRace = !this.showRace;
   }
   public onSubmit() {
-    this.formDetails.raceDetails.raceDate = this.convertDateToString(this.formDetails.raceDetails.raceDate);
+    this.formDetails.raceDetails.raceDate = this.datepipe.transform(this.formDetails.raceDetails.raceDate, 'dd-MM-yyyy');
     this.formDetails.raceDetails.targetTime = this.convertNgbTimeObjectToString(this.time);
-
-    this.createPlan(this.formDetails);
-    console.log(JSON.stringify(JSON.stringify(this.plan)));
-    console.log('finished');
+    this.createPlanService.createPlan(this.formDetails);
+    this.router.navigate(['/plan']);
+    // this.createPlanService.createPlan(this.formDetails).subscribe();
+    // this.createPlan(this.formDetails);
   };
 
   private convertNgbTimeObjectToString(timeObject: NgbTimeStruct): string {
     return timeObject.hour + ':' + timeObject.minute + ':' + timeObject.second;
   }
 
-  private convertDateToString(date: Object): string {
-    return this.datepipe.transform(date, 'dd-MM-yyyy');
-  }
-
-  createPlan(formDetails: FormDetails): void {
-    this.createPlanService.createPlan(formDetails).subscribe(
-      (plan: WeeklyPlan[]) => this.plan = plan,
-      error => this.errorMessage = error
-    );
-  }
+  // createPlan(formDetails: FormDetails): void {
+  //   this.createPlanService.createPlan(formDetails).subscribe(
+  //     (plan: WeeklyPlan[]) => this.plan = plan,
+  //     error => this.errorMessage = error
+  //   );
+  // }
 }
