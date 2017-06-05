@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Http, Response} from '@angular/http';
+import {Http, Response, Headers, RequestOptions} from '@angular/http';
 import {FormDetails} from '../api/model/form-details';
 import {Observable} from 'rxjs/Observable';
 import {WeeklyPlan} from '../api/model/WeeklyPlan';
@@ -7,16 +7,21 @@ import {WeeklyPlan} from '../api/model/WeeklyPlan';
 @Injectable()
 export class CreatePlanService {
   private serviceUrl = 'http://localhost:5000/create-plan';
+  private headers = new Headers({ 'Content-Type': 'application/json' });
+  private options = new RequestOptions({ headers: this.headers });
+  public plan: WeeklyPlan[];
+
   constructor(private http: Http) {}
 
-  createPlan(form: FormDetails): Observable<WeeklyPlan[]> {
-    return this.http.post(this.serviceUrl, form)
+  createPlan(form: FormDetails): void {
+    this.http.post(this.serviceUrl, JSON.stringify(form), this.options)
       .map(this.extractData)
-      .catch(this.handleError);
+      .catch(this.handleError)
+      .subscribe(plan => this.plan = plan);
   }
   private extractData(res: Response) {
     const body = res.json();
-    return body.data || {};
+    return body || JSON.stringify(body);
   }
   private handleError (error: Response | any) {
     let errMsg: string;
