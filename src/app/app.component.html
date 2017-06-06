@@ -1,7 +1,17 @@
-<!--<app-header></app-header>-->
-<!--<div id="main">-->
-  <!--<router-outlet></router-outlet>-->
-  <!--<app-left-sidebar></app-left-sidebar>-->
-  <!--<app-right-sidebar></app-right-sidebar>-->
-<!--</div>-->
-<!--<app-footer></app-footer>-->
+<app-header></app-header>
+<md-grid-list cols="3" rowHeight="2:1">
+  <md-grid-tile>
+    <app-left-sidebar></app-left-sidebar>
+  </md-grid-tile>
+  <md-grid-tile>
+    <router-outlet class="item item-2"></router-outlet>
+
+  </md-grid-tile>
+  <md-grid-tile>
+    <app-right-sidebar class="item item-3"></app-right-sidebar>
+
+  </md-grid-tile>
+</md-grid-list>
+
+
+  <app-footer></app-footer>

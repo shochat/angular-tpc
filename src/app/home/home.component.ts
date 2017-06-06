@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
   public onSubmit() {
     this.formDetails.raceDetails.raceDate = this.datepipe.transform(this.formDetails.raceDetails.raceDate, 'dd-MM-yyyy');
     this.formDetails.raceDetails.targetTime = this.convertNgbTimeObjectToString(this.time);
-    this.createPlanService.createPlan(this.formDetails);
+    this.createPlanService.formDetails = this.formDetails;
     this.router.navigate(['/plan']);
     // this.createPlanService.createPlan(this.formDetails).subscribe();
     // this.createPlan(this.formDetails);

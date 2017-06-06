@@ -5,7 +5,7 @@ import {CreatePlanService} from '../services/CreatePlanService';
 
 @Component({
   selector: 'app-plan',
-  template: '<div>{{plan | json}}</div>',
+  template: '<div>{{ this.plan | json }}</div>',
   styleUrls: ['./plan.component.css']
 })
 export class PlanComponent implements OnInit {
@@ -17,6 +17,8 @@ export class PlanComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.plan = this.createPlanService.plan;
+    this.createPlanService.createPlan().subscribe(
+      plan => this.plan = plan
+    );
   }
 }
